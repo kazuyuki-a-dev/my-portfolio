@@ -49,6 +49,15 @@ header nav a:hover {
   color: var(--color-primary);
 }
 
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: var(--color-text);
+}
+
 body {
   font-family:
     "Noto Sans JP",
@@ -346,4 +355,61 @@ footer {
   font-size: 0.85rem;
   border-top: 1px solid var(--color-border);
   margin-top: 40px;
+}
+
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .container {
+    padding: 0 16px;
+  }
+  .section-num {
+    font-size: 2rem;
+  }
+  .nav-toggle {
+    display: block;
+    margin-left: auto;
+  }
+  header nav ul.nav-links {
+    position: fixed;
+    top: 62px;
+    left: 0;
+    right: 0;
+    background: var(--color-bg);
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+    border-bottom: 1px solid var(--color-border);
+  }
+  header nav ul.nav-links.open {
+    max-height: 320px;
+  }
+  header nav ul.nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+  header nav ul.nav-links a {
+    display: block;
+    padding: 14px 0;
+  }
 }
