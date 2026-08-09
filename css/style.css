@@ -94,9 +94,14 @@ a {
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 12px 24px;
 }
-
+.project-card img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  display: block;
+}
 .hero {
   padding: 96px 0 72px;
   background-image:
@@ -334,11 +339,7 @@ section {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   transform: translateY(-2px);
 }
-.project-card img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+
 .project-card h3 {
   font-size: 1.05rem;
   margin: 16px 16px 8px;
@@ -389,7 +390,12 @@ section {
 #CONTACT .contact-links {
   justify-content: center;
 }
-
+article h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  margin: 16px 0 8px;
+}
 footer {
   padding: 40px 0;
   text-align: center;

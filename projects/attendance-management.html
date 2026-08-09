@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>K.A portfolio</title>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="../index.html">Kazuyuki Asari</a>
+      <button class="nav-toggle" id="navToggle" aria-label="メニュー">
+        &#9776;
+      </button>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="../index.html#ABOUT">ABOUT</a></li>
+          <li><a href="../index.html#SKILL">SKILL</a></li>
+          <li><a href="../index.html#PROJECTS">PROJECTS</a></li>
+          <li><a href="../index.html#CONTACT">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="project-hero">
+        <h1>attendance-managemet</h1>
+        <ul class="tags">
+          <li>個人開発 (private)</li>
+        </ul>
+        <div class="slider-wrap">
+          <button
+            class="slider-arrow slider-prev"
+            id="sliderPrev"
+            aria-label="前の画像"
+          >
+            &lsaquo;
+          </button>
+          <div class="project-slider">
+            <div class="slider-track">
+              <img
+                class="active"
+                src="../images/screenshots/attendance-management/attendance1.png"
+                alt="attendance-management の画面1"
+              />
+              <img
+                src="../images/screenshots/attendance-management/attendance2.png"
+                alt="attendance-management の画面2"
+              />
+            </div>
+          </div>
+          <button
+            class="slider-arrow slider-next"
+            id="sliderNext"
+            aria-label="次の画像"
+          >
+            &rsaquo;
+          </button>
+        </div>
+        <div class="slider-dots" id="sliderDots">
+          <button class="dot active" data-index="0" aria-label="1枚目"></button>
+          <button class="dot" data-index="1" aria-label="2枚目"></button>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="container">
+        <article>
+          <div class="project-head">
+            <h2>開発期間/作業時間</h2>
+          </div>
+          <p>約50時間</p>
+
+          <div class="project-head">
+            <h2>概要</h2>
+          </div>
+          <p>
+            勤怠管理アプリです。Laravel・Docker・MySQLを用いたフルスタックのWebアプリケーションで、利用者は打刻や勤務履歴の確認、修正申請ができ、管理者はスタッフの勤怠状況の確認やCSV出力、申請承認などを行えます。
+          </p>
+
+          <div class="project-head">
+            <h2>主な機能</h2>
+          </div>
+          <h3>利用者向け機能</h3>
+          <ul>
+            <li>ユーザー認証(新規登録・ログイン・メール認証)</li>
+            <li>
+              打刻機能(出勤・退勤・休憩開始・休憩終了をリアルタイムに記録)
+            </li>
+            <li>
+              勤務履歴閲覧(過去の勤務データ・休憩時間・実働時間を一覧表示)
+            </li>
+            <li>修正申請(勤務データの修正依頼、管理者への承認申請)</li>
+          </ul>
+          <h3>管理者向け機能</h3>
+          <ul>
+            <li>スタッフ管理(登録済みスタッフの一覧表示)</li>
+            <li>日別勤怠確認(特定日の全スタッフの勤怠状況を一覧表示)</li>
+            <li>スタッフ別勤怠閲覧(個別スタッフの月次勤怠データを一覧表示)</li>
+            <li>CSV出力(スタッフの月次勤怠データをダウンロード)</li>
+            <li>申請承認(スタッフからの修正依頼を承認)</li>
+          </ul>
+
+          <div class="project-head">
+            <h2>使用技術</h2>
+          </div>
+          <ul>
+            <li>PHP 8.x</li>
+            <li>Laravel 10.x</li>
+            <li>MySQL 8.0.26</li>
+            <li>Docker / Docker Compose</li>
+            <li>Nginx 1.21.1</li>
+            <li>PHPUnit(34項目のテストを実装し全て通過)</li>
+            <li>MailHog(メール送受信のテスト環境)</li>
+          </ul>
+
+          <div class="project-head">
+            <h2>URL</h2>
+            <div class="contact-links">
+              <a
+                href="https://github.com/kazuyuki-a-dev/attendance-management"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHubリポジトリ</a
+              >
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <a class="back-link" href="../index.html#PROJECTS"
+        >← PROJECTS一覧に戻る</a
+      >
+      <small>© 2026 Kazuyuki Asari. All rights reserved.</small>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
