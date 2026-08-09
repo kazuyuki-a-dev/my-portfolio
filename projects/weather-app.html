@@ -29,7 +29,7 @@
     </header>
     <div class="container">
       <div class="project-hero">
-        <h1>fleamarket-sample</h1>
+        <h1>weather-app</h1>
         <ul class="tags">
           <li>個人開発 (private)</li>
         </ul>
@@ -45,24 +45,12 @@
             <div class="slider-track">
               <img
                 class="active"
-                src="../images/screenshots/fleamarket-sample/fleamarket-sample1.png"
-                alt="fleamarket-sample の画面1"
+                src="../images/screenshots/weather-app/weather-app1.png"
+                alt="weather-app の画面1"
               />
               <img
-                src="../images/screenshots/fleamarket-sample/fleamarket-sample2.png"
-                alt="fleamarket-sample の画面2"
-              />
-              <img
-                src="../images/screenshots/fleamarket-sample/fleamarket-sample3.png"
-                alt="fleamarket-sample の画面3"
-              />
-              <img
-                src="../images/screenshots/fleamarket-sample/fleamarket-sample4.png"
-                alt="fleamarket-sample の画面3"
-              />
-              <img
-                src="../images/screenshots/fleamarket-sample/fleamarket-sample5.png"
-                alt="fleamarket-sample の画面3"
+                src="../images/screenshots/weather-app/weather-app2.png"
+                alt="weather-app の画面2"
               />
             </div>
           </div>
@@ -77,9 +65,6 @@
         <div class="slider-dots" id="sliderDots">
           <button class="dot active" data-index="0" aria-label="1枚目"></button>
           <button class="dot" data-index="1" aria-label="2枚目"></button>
-          <button class="dot" data-index="2" aria-label="3枚目"></button>
-          <button class="dot" data-index="2" aria-label="4枚目"></button>
-          <button class="dot" data-index="2" aria-label="5枚目"></button>
         </div>
       </div>
     </div>
@@ -89,43 +74,51 @@
           <div class="project-head">
             <h2>開発期間/作業時間</h2>
           </div>
-          <p>約５０時間</p>
+          <p>約２０時間</p>
           <div class="project-head">
             <h2>概要</h2>
           </div>
           <p>
-            カフェ用品に特化したフリマアプリ(メルカリ風)。出品・購入・決済・お気に入り・コメントなど一通りの機能を備えたフルスタックWebアプリケーション。
+            ユーザーの現在地や、保存したお気に入り地域の天気を手軽に確認できる、お天気アプリケーションのフロントエンド画面です。バックエンドのLaravel
+            APIと連携し、外部の気象APIからデータを取得してリアルタイムに描画します。
           </p>
           <div class="project-head">
             <h2>主な機能</h2>
           </div>
           <ul>
-            <li>ユーザー登録・メール認証</li>
-            <li>商品出品・編集・削除</li>
-            <li>商品検索・カテゴリー絞り込み</li>
-            <li>いいね・コメント機能</li>
-            <li>Stripeによる決済機能</li>
+            <li>現在位置のGPS取得(Geolocation API連携)</li>
+            <li>逆ジオコーディングによる地名特定(国土地理院API連携)</li>
+            <li>リアルタイム天気情報の表示(Open-Meteo API連携)</li>
+            <li>お気に入り・履歴地域のセレクトボックス表示</li>
+            <li>重複登録防止の通信スキップ制御機能</li>
+            <li>Tailwind CSSによるレスポンシブデザイン</li>
           </ul>
           <div class="project-head">
             <h2>使用技術</h2>
           </div>
           <ul>
-            <li>PHP 8.x</li>
-            <li>Laravel 10.x</li>
-            <li>MySQL 8.0.26</li>
+            <li>JavaScript(Vanilla ES6+)</li>
+            <li>Tailwind CSS(Standalone CLI)</li>
             <li>Docker</li>
-            <li>Nginx</li>
-            <li>Stripe API(Webhook連携)</li>
-            <li>PHPUnit(59項目のテストを実装し全て通過)</li>
+            <li>Node.js 24.15.0 / npm 11.12.1</li>
+            <li>Vitest / JSDOM(単体テスト・統合テストを実装)</li>
+            <li>Open-Meteo API(気象データ取得)</li>
+            <li>国土地理院API(逆ジオコーディング)</li>
           </ul>
           <div class="project-head">
             <h2>URL</h2>
             <div class="contact-links">
               <a
-                href="https://github.com/kazuyuki-a-dev/fleamarket-sample"
+                href="https://github.com/kazuyuki-a-dev/weather-app-frontend"
                 target="_blank"
                 rel="noopener noreferrer"
-                >GitHubリポジトリ</a
+                >GitHubリポジトリ（フロントエンド）</a
+              >
+              <a
+                href="https://github.com/kazuyuki-a-dev/weather-app-backend"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHubリポジトリ（バックエンド）</a
               >
             </div>
           </div>
