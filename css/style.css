@@ -648,6 +648,11 @@ main .container > p {
   margin-top: 14px;
 }
 
+.hidden-field {
+  position: absolute;
+  left: -9999px;
+}
+
 @media (max-width: 900px) {
   .about-grid {
     grid-template-columns: repeat(2, 1fr);

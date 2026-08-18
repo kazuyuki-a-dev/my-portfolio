@@ -43,8 +43,16 @@
             name="contact"
             method="POST"
             data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            action="thanks.html"
           >
             <input type="hidden" name="form-name" value="contact" />
+            <p class="hidden-field">
+              <label
+                >この項目には入力しないでください: <input name="bot-field"
+              /></label>
+            </p>
+
             <div class="form-row">
               <label for="name">お名前</label>
               <input type="text" id="name" name="name" required />
