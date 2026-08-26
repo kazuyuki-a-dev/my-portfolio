@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>在庫管理システム | Kazuyuki Asari Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="../index.html">Kazuyuki Asari</a>
+      <button class="nav-toggle" id="navToggle" aria-label="メニューを開く">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="../index.html#ABOUT">ABOUT</a></li>
+          <li><a href="../index.html#SKILL">SKILL</a></li>
+          <li><a href="../index.html#PROJECTS">PROJECTS</a></li>
+          <li><a href="../index.html#CONTACT">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="project-hero">
+        <div class="container">
+          <h1>在庫管理システム</h1>
+          <ul class="tags">
+            <li>個人開発</li>
+          </ul>
+
+          <div class="slider-wrap">
+            <button
+              class="slider-arrow prev"
+              id="sliderPrev"
+              aria-label="前の画像"
+            >
+              &lt;
+            </button>
+
+            <div class="project-slider">
+              <div class="slider-track" id="sliderTrack">
+                <img
+                  class="active"
+                  src="../images/screenshots/inventory-system/login.png"
+                  alt="inventory-system の画面1"
+                />
+                <img
+                  src="../images/screenshots/inventory-system/dashboard.png"
+                  alt="inventory-system の画面2"
+                />
+                <img
+                  src="../images/screenshots/inventory-system/parts.png"
+                  alt="inventory-system の画面3"
+                />
+                <img
+                  src="../images/screenshots/inventory-system/production-orders.png"
+                  alt="inventory-system の画面4"
+                />
+              </div>
+            </div>
+
+            <button
+              class="slider-arrow next"
+              id="sliderNext"
+              aria-label="次の画像"
+            >
+              &gt;
+            </button>
+          </div>
+
+          <div class="slider-dots" id="sliderDots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+            <span class="dot" data-index="3"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <article>
+          <div class="project-head">
+            <h2>開発期間</h2>
+            <p>約13時間</p>
+          </div>
+
+          <div class="project-head">
+            <h2>概要</h2>
+            <p>
+              製造業向けの在庫管理システムです。前職で製造業の経験をもとに、「仕入先からの部品調達
+              → 製造指示による部品消費・商品生産 →
+              納入先への出荷」という一連の業務フローを1つのアプリで管理できるように設計・実装しました。
+            </p>
+          </div>
+
+          <div class="project-head">
+            <h2>主な機能</h2>
+            <ul>
+              <li>
+                ユーザー認証（Laravel
+                Fortify：ログイン・パスワードリセット・2要素認証・パスキー対応。業務データへの不用意なアクセスを避けるため、公開の新規登録は無効化）
+              </li>
+              <li>
+                ダッシュボード（登録商品数・部品数・未着手の製造指示数のサマリー表示、部品ごとに設定できる低在庫アラート）
+              </li>
+              <li>カテゴリ管理（CRUD・キーワード検索）</li>
+              <li>仕入先管理（CRUD・キーワード検索・取引部品一覧）</li>
+              <li>納入先管理（CRUD・キーワード検索・取引商品一覧）</li>
+              <li>
+                部品管理（CRUD・SKU/名称検索・手動入庫登録・低在庫アラート閾値の個別設定）
+              </li>
+              <li>商品管理（CRUD・SKU/名称検索・部品表(BOM)管理）</li>
+              <li>
+                製造指示（登録・検索、完了処理で必要部品の自動出庫と商品の自動入庫を実行。在庫不足時はDBトランザクションごとロールバック）
+              </li>
+              <li>在庫一覧（商品・部品の現在庫数表示）</li>
+              <li>在庫変動履歴（入出庫ログの一覧）</li>
+            </ul>
+          </div>
+
+          <div class="project-head">
+            <h2>使用技術</h2>
+            <ul>
+              <li>PHP 8.3+</li>
+              <li>Laravel 13</li>
+              <li>Laravel Fortify（認証基盤）</li>
+              <li>MySQL 8.4</li>
+              <li>Redis</li>
+              <li>Tailwind CSS v4</li>
+              <li>Docker / Laravel Sail</li>
+              <li>PHPUnit（Featureテスト48件）</li>
+            </ul>
+          </div>
+          <div class="project-head">
+            <h2>URL</h2>
+            <div class="contact-links">
+              <a
+                href="https://github.com/kazuyuki-a-dev/inventory-system"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHubリポジトリ</a
+              >
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <a class="back-link" href="../index.html#PROJECTS"
+        >← PROJECTS一覧に戻る</a
+      >
+      <small>© 2026 Kazuyuki Asari. All rights reserved.</small>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
