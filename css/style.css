@@ -545,6 +545,11 @@ article p {
   color: var(--color-text-muted);
   font-size: 0.95rem;
 }
+/* 詳細ページで段落が続くとき、リンクのボタンの下に文が続くときのすき間 */
+.project-head p + p,
+.project-head .contact-links + p {
+  margin-top: 12px;
+}
 article ul {
   list-style: none;
   display: flex;

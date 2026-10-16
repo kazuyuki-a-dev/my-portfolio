@@ -57,6 +57,8 @@ Webエンジニアとしてのポートフォリオサイトです。
 | Latte&Item（フリマアプリ） | Laravel製のフリマアプリ。Stripe決済実装、PHPUnitによるテスト59件               | [fleamarket-sample](https://github.com/kazuyuki-a-dev/fleamarket-sample)                                                                                      |
 | 天気予報アプリ             | 位置情報・郵便番号から天気を取得できるフロントエンド／バックエンド構成のアプリ | [weather-app-frontend](https://github.com/kazuyuki-a-dev/weather-app-frontend) / [weather-app-backend](https://github.com/kazuyuki-a-dev/weather-app-backend) |
 | 勤怠管理アプリ             | Laravel製の勤怠管理システム。PHPUnitによるテスト34件                           | [attendance-management](https://github.com/kazuyuki-a-dev/attendance-management)                                                                              |
+| 在庫管理システム           | Laravel製の製造業向け在庫管理システム。部品調達→製造指示→出荷の業務フローを管理、PHPUnitによるテスト48件 | [inventory-system](https://github.com/kazuyuki-a-dev/inventory-system) |
+| FishingLog（釣果記録アプリ） | 釣りに行く前に開く釣果記録アプリ。潮と同じ時期の記録から釣り場を提案、3段階の公開範囲。Render で公開中、PHPUnit によるテスト322件 | [fishing-log](https://github.com/kazuyuki-a-dev/fishing-log)（[お試し環境](https://fishing-log-hasx.onrender.com)） |
 
 各プロジェクトの詳細（開発期間・使用技術・機能一覧など）はポートフォリオサイト内の各詳細ページ、またはリンク先の各リポジトリのREADMEをご覧ください。
 
