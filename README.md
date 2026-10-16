@@ -3,7 +3,7 @@
 Webエンジニアとしてのポートフォリオサイトです。
 自己紹介、スキル、制作物（PROJECTS）、お問い合わせフォームをまとめています。
 
-**URL：** https://（Netlifyデプロイ後のURLをここに記載）
+**URL：** https://kazuyuki-a-dev.netlify.app/
 
 ---
 
